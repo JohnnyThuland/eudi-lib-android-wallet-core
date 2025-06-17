@@ -195,8 +195,8 @@ internal fun List<Format>.toVpFormats(): VpFormats {
         .firstOrNull()
         ?.let {
             VpFormat.SdJwtVc(
-                sdJwtAlgorithms = it.sdJwtAlgorithms.map { it.toJwsAlgorithm(JWSAlgorithm.ES256) },
-                kbJwtAlgorithms = it.kbJwtAlgorithms.map { it.toJwsAlgorithm(JWSAlgorithm.ES256) }
+                sdJwtAlgorithms = it.sdJwtAlgorithms.map { it.toJwsAlgorithm(JWSAlgorithm.RS256) },
+                kbJwtAlgorithms = it.kbJwtAlgorithms.map { it.toJwsAlgorithm(JWSAlgorithm.RS256) }
             )
         }
 

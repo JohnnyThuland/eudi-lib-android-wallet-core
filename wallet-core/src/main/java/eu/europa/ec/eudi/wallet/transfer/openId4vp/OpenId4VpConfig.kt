@@ -262,6 +262,7 @@ sealed interface Format {
     ) : Format {
         companion object {
             val ES256 = SdJwtVc(listOf(Algorithm.ESP256), listOf(Algorithm.ESP256))
+            val RS256 = SdJwtVc(listOf(Algorithm.RS256), listOf(Algorithm.RS256))
         }
     }
 
